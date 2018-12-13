@@ -43,7 +43,7 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Book $book)
     {
         //
         return new BookResource($book);
@@ -56,7 +56,7 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Book $book)
     {
         // check if currently authenticated user is the owner of the book
       if ($request->user()->id !== $book->user_id) {
