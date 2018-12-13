@@ -16,9 +16,9 @@ What things you need to install the laravel framework
 
 Clone the repository in your directory
 
-´´´
+```
 git clone https://github.com/softdirex/books-reviws-api
-´´´
+```
 
 ### Installing
 
@@ -42,3 +42,7 @@ php artisan jwt:secret
 Visit the laravel documentation to try to run the migration
 
 [Migration](https://laravel.com/docs/5.7/migrations#running-migrations)
+
+## Running the proyect
+
+Install xampp or wampserver to try the proyect
